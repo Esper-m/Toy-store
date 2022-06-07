@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220406134100">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220607222432">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,24 +15,24 @@
 <body>
 	<div class="wrapper">
 		<div class="wrapper">
-			<header class="header">
+			<header data-sticky="" class="header">
 				<div class="header__contacts contacts-header">
 					<div class="contacts-header__container">
-						<div data-da=".menu__body, 480" class="contacts-header__contacts">
+						<nav data-da=".menu__body, 480" class="contacts-header__contacts">
 							<ul class="contacts-header__list">
 								<li class="contacts-header__item"><a href="tel:+12139745898" class="contacts-header__link">Call Us: +1 213 974-5898</a></li>
 								<li class="contacts-header__item"><a href="mailto:toystore@template.com" class="contacts-header__link">Email: toystore@template.com</a></li>
 							</ul>
-						</div>
-						<div data-da=".menu__body, 480" class="contacts-header__socials socials-header">
+						</nav>
+						<nav data-da=".menu__body, 480" class="contacts-header__socials socials-header">
 							<ul class="socials-header__list">
-								<li><a href="" class="socials-header__link-socials _icon-twitter"></a></li>
-								<li><a href="" class="socials-header__link-socials _icon-facebook"></a></li>
-								<li><a href="" class="socials-header__link-socials _icon-instagram"></a></li>
-								<li><a href="" class="socials-header__link-socials _icon-pinterest"></a></li>
-								<li><a href="" class="socials-header__link-socials _icon-youtube"></a></li>
+								<li class="socials-header__item"><a href="" class="socials-header__link-socials _icon-twitter"></a></li>
+								<li class="socials-header__item"><a href="" class="socials-header__link-socials _icon-facebook"></a></li>
+								<li class="socials-header__item"><a href="" class="socials-header__link-socials _icon-instagram"></a></li>
+								<li class="socials-header__item"><a href="" class="socials-header__link-socials _icon-pinterest"></a></li>
+								<li class="socials-header__item"><a href="" class="socials-header__link-socials _icon-youtube"></a></li>
 							</ul>
-						</div>
+						</nav>
 					</div>
 				</div>
 				<div class="header__content content-header">
@@ -52,129 +52,146 @@
 						</div>
 						<div class="content-header__actions">
 							<div class="content-header__cart cart-header">
-								<button type="button" class="cart-header__cart-btn">Cart <span class="cart-header__icon _icon-cart1"></span><span class="cart-header__added">0</span></button>
+								<p class="cart-header__added"></p>
+								<a href="" type="button" class="cart-header__cart-btn _icon-cart1">
+									<p>Cart</p><span>0</span>
+								</a>
 								<div class="cart-header__body">
 									<ul class="cart-header__list cart-list"></ul>
 								</div>
 							</div>
-							<!-- <button type="button" class="content-header__cart">Cart <span class="_icon-cart1"></span></button> -->
-							<button type="button" class="menu__icon icon-menu"><span></span></button>
 						</div>
 					</div>
 				</div>
 			</header>
 		</div>
 		<main class="page">
-			<div class="main-block">
+			<section class="main-block">
 				<div class="main-block__container">
 					<div class="main-block__card card-main">
 						<div class="card-main__body">
 							<p class="card-main__slogan">Say Hello to ToyStore!</p>
 							<h1 class="card-main__title">Free Ecommerce Template for Webflow</h1>
-							<a href="" class="card-main__btn btn">Open Catalog</a>
+							<a href="#" class="card-main__btn btn">Open Catalog</a>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="categories-block">
+			</section>
+			<section class="categories-block">
 				<div class="categories-block__container">
 					<div class="categories-block__columns categories-column">
 						<div class="categories-column__body">
 							<div class="categories-column__img"><picture><source srcset="img/product/categ1.webp" type="image/webp"><img src="img/product/categ1.png" alt=""></picture></div>
 							<div class="categories-column__category">
-								<div class="categories-column__title">Stuffed Animals</div>
-								<a href="" class="categories-column__btn btn btn_white">Shop Now</a>
+								<h2 class="categories-column__title">Stuffed Animals</h2>
+								<a href="#" class="categories-column__btn blob-btn">Shop Now
+									<span class="blob-btn__inner">
+										<span class="blob-btn__blobs">
+											<span class="blob-btn__blob"></span>
+											<span class="blob-btn__blob"></span>
+											<span class="blob-btn__blob"></span>
+										</span>
+									</span>
+								</a>
 							</div>
 						</div>
 						<div class="categories-column__body categories-column__body_right">
 							<div class="categories-column__category categories-column__category_right">
-								<div class="categories-column__title">Wooden Toys</div>
-								<a href="" class="categories-column__btn btn btn_white">Shop Now</a>
+								<h2 class="categories-column__title">Wooden Toys</h2>
+								<a href="" class="categories-column__btn blob-btn">Shop Now
+									<span class="blob-btn__inner">
+										<span class="blob-btn__blobs">
+											<span class="blob-btn__blob blob-btn__blob_r"></span>
+											<span class="blob-btn__blob blob-btn__blob_r"></span>
+											<span class="blob-btn__blob blob-btn__blob_r"></span>
+										</span>
+									</span>
+								</a>
 							</div>
 							<div class="categories-column__img categories-column__img_right"><picture><source srcset="img/product/categ2.webp" type="image/webp"><img src="img/product/categ2.png" alt=""></picture></div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<dev class="products-page">
+			</section>
+			<section class="products-page">
 				<div class="products-page__container">
 					<div class="products-page__category product-category">
 						<div class="product-category__top">
-							<div class="product-category__title">Stuffed Animals</div>
+							<h2 class="product-category__title">Stuffed Animals</h2>
 							<a href="" class="product-category__btn-all ">See All Toys<span class="_icon-Arrow"></span></a>
 						</div>
 						<div class="product-category__slider stuffed-slider">
 							<div class="stuffed-slider__slider swiper">
 								<div class="stuffed-slider__pagination"></div>
 								<div class="stuffed-slider__wrapper swiper-wrapper">
-									<div class="stuffed-slider__slide product-card swiper-slide">
-										<div data-pid="1" class="product-card__body">
+									<div data-pid="1" class="stuffed-slider__slide product-card swiper-slide">
+										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod1.webp" type="image/webp"><img src="img/product/prod1.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Teddy Bear</div>
+												<h3 class="product-card__title">Teddy Bear</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 30.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="stuffed-slider__slide product-card swiper-slide">
+									<div data-pid="2" class="stuffed-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod2.webp" type="image/webp"><img src="img/product/prod2.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Mega Plush Toy</div>
+												<h3 class="product-card__title">Mega Plush Toy</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 38.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="stuffed-slider__slide product-card swiper-slide">
+									<div data-pid="3" class="stuffed-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod3.webp" type="image/webp"><img src="img/product/prod3.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Cute Dog</div>
+												<h3 class="product-card__title">Cute Dog</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 24.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="stuffed-slider__slide product-card swiper-slide">
+									<div data-pid="4" class="stuffed-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod4.webp" type="image/webp"><img src="img/product/prod4.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Little Friend</div>
+												<h3 class="product-card__title">Little Friend</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 42.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="stuffed-slider__slide product-card swiper-slide">
+									<div data-pid="5" class="stuffed-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod1.webp" type="image/webp"><img src="img/product/prod1.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Teddy Bear</div>
+												<h3 class="product-card__title">Teddy Bear</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 30.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="stuffed-slider__slide product-card swiper-slide">
+									<div data-pid="6" class="stuffed-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod2.webp" type="image/webp"><img src="img/product/prod2.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Mega Plush Toy</div>
+												<h3 class="product-card__title">Mega Plush Toy</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 38.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="stuffed-slider__slide product-card swiper-slide">
+									<div data-pid="7" class="stuffed-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod3.webp" type="image/webp"><img src="img/product/prod3.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Cute Dog</div>
+												<h3 class="product-card__title">Cute Dog</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 24.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="stuffed-slider__slide product-card swiper-slide">
+									<div data-pid="8" class="stuffed-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod4.webp" type="image/webp"><img src="img/product/prod4.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Little Friend</div>
+												<h3 class="product-card__title">Little Friend</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 42.00 USD</button>
 											</div>
 										</div>
@@ -185,81 +202,81 @@
 					</div>
 					<div class="products-page__category product-category">
 						<div class="product-category__top">
-							<div class="product-category__title">Wooden Toys</div>
+							<h2 class="product-category__title">Wooden Toys</h2>
 							<a href="" class="product-category__btn-all ">See All Toys<span class="_icon-Arrow"></span></a>
 						</div>
 						<div class="product-category__slider wooden-slider">
 							<div class="wooden-slider__slider swiper">
 								<div class="wooden-slider__pagination"></div>
 								<div class="wooden-slider__wrapper swiper-wrapper">
-									<div class="wooden-slider__slide product-card swiper-slide">
+									<div data-pid="9" class="wooden-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod2-1.webp" type="image/webp"><img src="img/product/prod2-1.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Happy Flower</div>
+												<h3 class="product-card__title">Happy Flower</h3>
 												<button type="wooden" class="product-card__price btn btn_size">$ 38.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="wooden-slider__slide product-card swiper-slide">
+									<div data-pid="10" class="wooden-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod2-2.webp" type="image/webp"><img src="img/product/prod2-2.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Lift Machine</div>
+												<h3 class="product-card__title">Lift Machine</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 24.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="wooden-slider__slide product-card swiper-slide">
+									<div data-pid="11" class="wooden-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod2-3.webp" type="image/webp"><img src="img/product/prod2-3.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Wooden Camera</div>
+												<h3 class="product-card__title">Wooden Camera</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 32.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="wooden-slider__slide product-card swiper-slide">
+									<div data-pid="12" class="wooden-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod2-4.webp" type="image/webp"><img src="img/product/prod2-4.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Little Rabbit</div>
+												<h3 class="product-card__title">Little Rabbit</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 16.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="wooden-slider__slide product-card swiper-slide">
+									<div data-pid="13" class="wooden-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod2-1.webp" type="image/webp"><img src="img/product/prod2-1.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Happy Flower</div>
+												<h3 class="product-card__title">Happy Flower</h3>
 												<button type="wooden" class="product-card__price btn btn_size">$ 38.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="wooden-slider__slide product-card swiper-slide">
+									<div data-pid="14" class="wooden-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod2-2.webp" type="image/webp"><img src="img/product/prod2-2.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Lift Machine</div>
+												<h3 class="product-card__title">Lift Machine</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 24.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="wooden-slider__slide product-card swiper-slide">
+									<div data-pid="15" class="wooden-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod2-3.webp" type="image/webp"><img src="img/product/prod2-3.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Wooden Camera</div>
+												<h3 class="product-card__title">Wooden Camera</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 32.00 USD</button>
 											</div>
 										</div>
 									</div>
-									<div class="wooden-slider__slide product-card swiper-slide">
+									<div data-pid="16" class="wooden-slider__slide product-card swiper-slide">
 										<div class="product-card__body">
 											<div class="product-card__img"><picture><source srcset="img/product/prod2-4.webp" type="image/webp"><img src="img/product/prod2-4.png" alt=""></picture></div>
 											<div class="product-card__info">
-												<div class="product-card__title">Little Rabbit</div>
+												<h3 class="product-card__title">Little Rabbit</h3>
 												<button type="button" class="product-card__price btn btn_size">$ 16.00 USD</button>
 											</div>
 										</div>
@@ -269,70 +286,72 @@
 						</div>
 					</div>
 				</div>
-			</dev>
-			<div class="about-block">
+			</section>
+			<section class="about-block">
 				<div class="about-block__container">
 					<div class="about-block__body">
-						<div class="about-block__subtitle subtitle">About The Shop</div>
-						<div class="about-block__title">Watch Our Story</div>
-						<div class="about-block__text text">There is no magic formula to write perfect ad copy. It is based on a number of factors, including ad placement, demographic, even the consumer’s mood.</div>
+						<h2 class="about-block__subtitle subtitle">About The Shop</h2>
+						<h3 class="about-block__title">Watch Our Story</h3>
+						<p class="about-block__text text">There is no magic formula to write perfect ad copy. It is based on a number of factors, including ad placement, demographic, even the consumer’s mood.</p>
 						<a href="" class="about-block__btn-play _icon-play"></a>
 					</div>
 				</div>
-			</div>
-			<div class="info-block">
+			</section>
+			<section class="info-block">
 				<div class="info-block__container">
 					<div class="info-block__heading heading-info">
-						<div class="heading-info__subtitle subtitle">Made for Webflow</div>
-						<div class="heading-info__title title">Simple & Colorful Ecommerce Template for Your Business</div>
+						<h2 class="heading-info__subtitle subtitle">Made for Webflow</h2>
+						<h3 class="heading-info__title title">Simple & Colorful Ecommerce Template for Your Business</h3>
 					</div>
 					<div class="info-block__content info-content">
 						<div class="info-content__info">
-							<div class="info-content__title title">Available for FREE!</div>
-							<div class="info-content__text text">A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy</div>
+							<h4 class="info-content__title title">Available for FREE!</h4>
+							<p class="info-content__text text">A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy</p>
 							<a href="" class="info-content__btn btn">GET IT NOW!</a>
 						</div>
 						<div class="info-content__img"><picture><source srcset="img/content/1.webp" type="image/webp"><img src="img/content/1.jpg" alt=""></picture></div>
 					</div>
 				</div>
-			</div>
-			<div class="subscribe-block">
+			</section>
+			<section class="subscribe-block">
 				<div class="subscribe-block__container">
 					<div class="subscribe-block__body">
 						<div class="subscribe-block__info">
 							<div class="subscribe-block__icon _icon-telegram"></div>
-							<div class="subscribe-block__title">Subscribe to our newsletter & get <span>10% discount!</span></div>
+							<p class="subscribe-block__title">Subscribe to our newsletter & get <span>10% discount!</span></p>
 						</div>
-						<form action="" class="subscribe-block__form">
+						<form class="subscribe-block__form">
 							<input type="email" class="subscribe-block__email">
 							<button type="submit" class="subscribe-block__button"></button>
 						</form>
 					</div>
 				</div>
-			</div>
-			<div class="insta-block">
+			</section>
+			<section class="insta-block">
 				<div class="insta-block__container">
 					<div class="insta-block__heading">
-						<div class="insta-block__subtitle subtitle">@ElasticThemes</div>
-						<div class="insta-block__title title">We're on Instagram!</div>
+						<a href="#" class="insta-block__subtitle subtitle">@ElasticThemes</a>
+						<h2 class="insta-block__title title">We're on Instagram!</h2>
 					</div>
-					<div class="insta-block__images">
-						<div class="insta-block__img"><picture><source srcset="img/content/insta1.webp" type="image/webp"><img src="img/content/insta1.jpg" alt=""></picture></div>
-						<div class="insta-block__img"><picture><source srcset="img/content/insta2.webp" type="image/webp"><img src="img/content/insta2.jpg" alt=""></picture></div>
-						<div class="insta-block__img"><picture><source srcset="img/content/insta3.webp" type="image/webp"><img src="img/content/insta3.jpg" alt=""></picture></div>
-						<div class="insta-block__img"><picture><source srcset="img/content/insta4.webp" type="image/webp"><img src="img/content/insta4.jpg" alt=""></picture></div>
-						<div class="insta-block__img"><picture><source srcset="img/content/insta5.webp" type="image/webp"><img src="img/content/insta5.jpg" alt=""></picture></div>
-						<div class="insta-block__img"><picture><source srcset="img/content/insta6.webp" type="image/webp"><img src="img/content/insta6.jpg" alt=""></picture></div>
+					<div class="insta-block__images swiper">
+						<div class="insta-block__wrapper swiper-wrapper">
+							<div class="insta-block__img swiper-slide"><picture><source srcset="img/content/insta1.webp" type="image/webp"><img src="img/content/insta1.jpg" alt=""></picture></div>
+							<div class="insta-block__img swiper-slide"><picture><source srcset="img/content/insta2.webp" type="image/webp"><img src="img/content/insta2.jpg" alt=""></picture></div>
+							<div class="insta-block__img swiper-slide"><picture><source srcset="img/content/insta3.webp" type="image/webp"><img src="img/content/insta3.jpg" alt=""></picture></div>
+							<div class="insta-block__img swiper-slide"><picture><source srcset="img/content/insta4.webp" type="image/webp"><img src="img/content/insta4.jpg" alt=""></picture></div>
+							<div class="insta-block__img swiper-slide"><picture><source srcset="img/content/insta5.webp" type="image/webp"><img src="img/content/insta5.jpg" alt=""></picture></div>
+							<div class="insta-block__img swiper-slide"><picture><source srcset="img/content/insta6.webp" type="image/webp"><img src="img/content/insta6.jpg" alt=""></picture></div>
+						</div>
 					</div>
-					<a href class="insta-block__btn btn">See More Photos</a>
+					<a href="#" class="insta-block__btn btn">See More Photos</a>
 				</div>
-			</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__content footer-content">
 					<div class="footer-content__body">
-						<a href class="footer-content__logo logo">ToyStore</a>
+						<a href="" class="footer-content__logo logo">ToyStore</a>
 						<div class="footer-content__menu menu-footer">
 							<nav class="menu-footer__body">
 								<ul class="menu-footer__list">
@@ -344,15 +363,15 @@
 								</ul>
 							</nav>
 						</div>
-						<div class="footer-content__socials socials-footer">
+						<nav class="footer-content__socials socials-footer">
 							<ul class="socials-footer__list">
-								<li><a href="" class="socials-footer__link-socials _icon-twitter"></a></li>
-								<li><a href="" class="socials-footer__link-socials _icon-facebook"></a></li>
-								<li><a href="" class="socials-footer__link-socials _icon-instagram"></a></li>
-								<li><a href="" class="socials-footer__link-socials _icon-pinterest"></a></li>
-								<li><a href="" class="socials-footer__link-socials _icon-youtube"></a></li>
+								<li class="socials-footer__item"><a href="" class="socials-footer__link _icon-twitter"></a></li>
+								<li class="socials-footer__item"><a href="" class="socials-footer__link _icon-facebook"></a></li>
+								<li class="socials-footer__item"><a href="" class="socials-footer__link _icon-instagram"></a></li>
+								<li class="socials-footer__item"><a href="" class="socials-footer__link _icon-pinterest"></a></li>
+								<li class="socials-footer__item"><a href="" class="socials-footer__link _icon-youtube"></a></li>
 							</ul>
-						</div>
+						</nav>
 					</div>
 				</div>
 				<div class="footer__bottom footer-bottom">
@@ -376,7 +395,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220406134100"></script>
+	<script src="js/app.min.js?_v=20220607222432"></script>
 </body>
 
 </html>
