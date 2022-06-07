@@ -3736,11 +3736,11 @@
                 const productImageFlyTop = productImage.getBoundingClientRect().top;
                 const productImageFlyLeft = productImage.getBoundingClientRect().left;
                 productImageFly.setAttribute("class", "_flyImage _ibg");
-                productImageFly.style.cssText = `\n      left: ${productImageFlyLeft}px;\n      top: ${productImageFlyTop}px;\n      width: ${productImageFlyWidth}px;\n      height: ${productImageFlyHeight}px;\n   `;
+                productImageFly.style.cssText = `\n         left: ${productImageFlyLeft}px;\n         top: ${productImageFlyTop}px;\n         width: ${productImageFlyWidth}px;\n         height: ${productImageFlyHeight}px;\n      `;
                 document.body.append(productImageFly);
                 const cartFlyLeft = cart.getBoundingClientRect().left;
                 const cartFlyTop = cart.getBoundingClientRect().top;
-                productImageFly.style.cssText = `\n      left: ${cartFlyLeft}px;\n      top: ${cartFlyTop}px;\n      width: 0px;\n      height: 0px;\n      opacity:0;\n   `;
+                productImageFly.style.cssText = `\n         left: ${cartFlyLeft}px;\n         top: ${cartFlyTop}px;\n         width: 0px;\n         height: 0px;\n         opacity:0;\n      `;
                 productImageFly.addEventListener("transitionend", (function() {
                     if (productButton.classList.contains("_fly")) {
                         productImageFly.remove();
@@ -3762,7 +3762,7 @@
                     const product = document.querySelector(`[data-pid="${productId}"]`);
                     const cartProductImage = product.querySelector(".product-card__img").innerHTML;
                     const cartProductTitle = product.querySelector(".product-card__title").innerHTML;
-                    const cartProductContent = `\n      <a href="" class="cart-list__image">${cartProductImage}</a>\n      <div class="cart-list__body">\n         <a href="" class="cart-list__title">${cartProductTitle}</a>\n         <div class="cart-list__quantity">Quantity: <span>1</span></div>\n         <a href="" class="cart-list__delete">Delete</a>\n      </div>`;
+                    const cartProductContent = `\n         <a href="" class="cart-list__image">${cartProductImage}</a>\n         <div class="cart-list__body">\n            <a href="" class="cart-list__title">${cartProductTitle}</a>\n            <div class="cart-list__quantity">Quantity: <span>1</span></div>\n            <a href="" class="cart-list__delete">Delete</a>\n         </div>`;
                     cartList.insertAdjacentHTML("beforeend", `<li data-cart-pid="${productId}" class="cart-list__item">${cartProductContent}</li>`);
                 } else {
                     const cartProductQuantity = cartProduct.querySelector(".cart-list__quantity span");
